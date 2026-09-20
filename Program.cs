@@ -110,20 +110,31 @@
 // bool isEven = num % 2 == 0;
 // Console.WriteLine(isEven);
 
-// // //Инкремент в выражении
-// // int num = 6;
-// // int 
+//Инкремент в выражении
+int num1 = 7;
+bool result1 = num1++ > 7; //false т.к. еще не увеличили
+int num2 = 7;
+bool result2 = ++num2 > 7; //true т.к. попало уже новое значение (8)
+Console.WriteLine($"x++: результат = {result1}, x = {num1}"); 
+Console.WriteLine($"++x: результат = {result2}, x = {num2}");
 
-//Калькулятор скидки с несколькими условиями
-Console.Write("Введите сумму покупки ");
-double summa = double.Parse(Console.ReadLine());
-Console.Write("Есть карта постоянного клиента? 1 - да, 0 - нет ");
-int card = int.Parse(Console.ReadLine());
-bool havecard = (card == 1);
-Console.Write("Введите количество товаров в чеке ");
-int quantity = int.Parse(Console.ReadLine());
-bool eligibleForDiscount = (summa >= 3000 && quantity >= 3) || havecard;
-Console.WriteLine($"Сумма больше 3000: {summa}");
-Console.WriteLine($"Количество товаров больше трёх: {quantity}");
-Console.WriteLine($"Карта постоянного клиента: {card}");
-Console.WriteLine($"Скидка: {eligibleForDiscount}");
+int x1 = 2;
+int result01 = x1++ * 3;  // При x++ в умножение попадает старое значение (2)
+int x2 = 2;
+int result02 = ++x2 * 3; //При ++x  уже увеличенное (3)
+Console.WriteLine($"x++ * 3: результат = {result01}, x = {x1}"); 
+Console.WriteLine($"++x * 3: результат = {result02}, x = {x2}"); 
+
+// //Калькулятор скидки с несколькими условиями
+// Console.Write("Введите сумму покупки ");
+// double summa = double.Parse(Console.ReadLine());
+// Console.Write("Есть карта постоянного клиента? 1 - да, 0 - нет ");
+// int card = int.Parse(Console.ReadLine());
+// bool havecard = (card == 1);
+// Console.Write("Введите количество товаров в чеке ");
+// int quantity = int.Parse(Console.ReadLine());
+// bool eligibleForDiscount = (summa >= 3000 && quantity >= 3) || havecard;
+// Console.WriteLine($"Сумма больше 3000: {summa}");
+// Console.WriteLine($"Количество товаров больше трёх: {quantity}");
+// Console.WriteLine($"Карта постоянного клиента: {card}");
+// Console.WriteLine($"Скидка: {eligibleForDiscount}");
