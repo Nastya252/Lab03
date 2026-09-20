@@ -1,114 +1,114 @@
-﻿// Console.WriteLine("Банковский счёт");
-// double balance = 1000;
-// Console.WriteLine($"Начальный баланс: {balance}");
-// balance += 500; // пополнение
-// Console.WriteLine($"После пополнения на 500: {balance}");
-// balance -= 200; // покупка
-// Console.WriteLine($"После покупки на 200: {balance}");
-// balance *= 1.05; // начисление 5% процентов
-// Console.WriteLine($"После начисления 5%: {balance}");
-// balance /= 2; // разделили счёт пополам с партнёром
-// Console.WriteLine($"После деления пополам: {balance}");
+﻿Console.WriteLine("Банковский счёт");
+double balance = 1000;
+Console.WriteLine($"Начальный баланс: {balance}");
+balance += 500; // пополнение
+Console.WriteLine($"После пополнения на 500: {balance}");
+balance -= 200; // покупка
+Console.WriteLine($"После покупки на 200: {balance}");
+balance *= 1.05; // начисление 5% процентов
+Console.WriteLine($"После начисления 5%: {balance}");
+balance /= 2; // разделили счёт пополам с партнёром
+Console.WriteLine($"После деления пополам: {balance}");
 
-// Console.WriteLine();
-// Console.WriteLine("Постфикс vs префикс");
-// int lessonNumber = 1;
-// Console.WriteLine($"lessonNumber++ выводит: {lessonNumber++}");//сначала возвращает текущее значение 1
-// Console.WriteLine($"После этого lessonNumber = {lessonNumber}");//увеличивает переменную на 1
-// int weekNumber = 1;
-// Console.WriteLine($"{++weekNumber} выводит: {++weekNumber}");//сразу выводит новое значение
-// Console.WriteLine($"После этого weekNumber = {weekNumber}");
-// Console.WriteLine();
-// Console.WriteLine("Практическая ловушка");
-// int attempts = 0;
-// Console.WriteLine($"Попытка №{++attempts}");
-// Console.WriteLine($"Попытка №{++attempts}");
-// Console.WriteLine($"Всего попыток: {attempts}");
+Console.WriteLine();
+Console.WriteLine("Постфикс vs префикс");
+int lessonNumber = 1;
+Console.WriteLine($"lessonNumber++ выводит: {lessonNumber++}");//сначала возвращает текущее значение 1
+Console.WriteLine($"После этого lessonNumber = {lessonNumber}");//увеличивает переменную на 1
+int weekNumber = 1;
+Console.WriteLine($"{++weekNumber} выводит: {++weekNumber}");//сразу выводит новое значение
+Console.WriteLine($"После этого weekNumber = {weekNumber}");
+Console.WriteLine();
+Console.WriteLine("Практическая ловушка");
+int attempts = 0;
+Console.WriteLine($"Попытка №{++attempts}");
+Console.WriteLine($"Попытка №{++attempts}");
+Console.WriteLine($"Всего попыток: {attempts}");
 
-// Console.WriteLine();
-// Console.WriteLine("Операторы сравнения");
-// double myGrade = 4.6;
-// double passingGrade = 4.0;
-// int myAge = 20;
-// int votingAge = 18;
-// bool isPassing = myGrade >= passingGrade;
-// bool isExactAge = myAge == votingAge;
-// bool canVote = myAge >= votingAge;
-// bool isNotFailing = myGrade != 2.0;
-// Console.WriteLine($"Балл {myGrade} >= {passingGrade}: {isPassing}");
-// Console.WriteLine($"Возраст {myAge} == {votingAge}: {isExactAge}");
-// Console.WriteLine($"Возраст {myAge} >= {votingAge} (может голосовать): {canVote}");
-// Console.WriteLine($"Балл {myGrade} != 2.0 (не двойка): {isNotFailing}");
+Console.WriteLine();
+Console.WriteLine("Операторы сравнения");
+double myGrade = 4.6;
+double passingGrade = 4.0;
+int myAge = 20;
+int votingAge = 18;
+bool isPassing = myGrade >= passingGrade;
+bool isExactAge = myAge == votingAge;
+bool canVote = myAge >= votingAge;
+bool isNotFailing = myGrade != 2.0;
+Console.WriteLine($"Балл {myGrade} >= {passingGrade}: {isPassing}");
+Console.WriteLine($"Возраст {myAge} == {votingAge}: {isExactAge}");
+Console.WriteLine($"Возраст {myAge} >= {votingAge} (может голосовать): {canVote}");
+Console.WriteLine($"Балл {myGrade} != 2.0 (не двойка): {isNotFailing}");
 
-// Console.WriteLine();
-// Console.WriteLine("Логические операторы");
-// bool hasPassingGrade = true;
-// bool hasAttendance = false;
-// bool hasDebt = true;
-// bool canGetScholarship = hasPassingGrade && hasAttendance;
-// bool canRetakeExam = hasPassingGrade || hasAttendance;
-// bool isDebtFree = !hasDebt;
-// Console.WriteLine($"Может получить стипендию (оценка И посещаемость): {canGetScholarship}");
-// Console.WriteLine($"Может пересдать (оценка ИЛИ посещаемость): {canRetakeExam}");
-// Console.WriteLine($"Нет долгов: {isDebtFree}");
+Console.WriteLine();
+Console.WriteLine("Логические операторы");
+bool hasPassingGrade = true;
+bool hasAttendance = false;
+bool hasDebt = true;
+bool canGetScholarship = hasPassingGrade && hasAttendance;
+bool canRetakeExam = hasPassingGrade || hasAttendance;
+bool isDebtFree = !hasDebt;
+Console.WriteLine($"Может получить стипендию (оценка И посещаемость): {canGetScholarship}");
+Console.WriteLine($"Может пересдать (оценка ИЛИ посещаемость): {canRetakeExam}");
+Console.WriteLine($"Нет долгов: {isDebtFree}");
 
-// Console.WriteLine();
-// Console.WriteLine("Короткое замыкание");
-// bool CheckAndPrint(string label, bool value) {
-//     Console.WriteLine($" Вычисляется: {label}");
-//     return value;
-// }
-// Console.WriteLine("Проверяем && (первый операнд false):");
-// bool resultAnd = CheckAndPrint("A", false) && CheckAndPrint("B", true);
-// Console.WriteLine($"Результат: {resultAnd}");
-// Console.WriteLine();
-// Console.WriteLine("Проверяем || (первый операнд true):");
-// bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
-// Console.WriteLine($"Результат: {resultOr}");
+Console.WriteLine();
+Console.WriteLine("Короткое замыкание");
+bool CheckAndPrint(string label, bool value) {
+    Console.WriteLine($" Вычисляется: {label}");
+    return value;
+}
+Console.WriteLine("Проверяем && (первый операнд false):");
+bool resultAnd = CheckAndPrint("A", false) && CheckAndPrint("B", true);
+Console.WriteLine($"Результат: {resultAnd}");
+Console.WriteLine();
+Console.WriteLine("Проверяем || (первый операнд true):");
+bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
+Console.WriteLine($"Результат: {resultOr}");
 
-// Console.WriteLine();
-// Console.WriteLine("Приоритет операций");
-// int resultNoParens = 2 + 3 * 4;
-// int resultWithParens = (2 + 3) * 4;
-// Console.WriteLine($"2 + 3 * 4 = {resultNoParens}");
-// Console.WriteLine($"(2 + 3) * 4 = {resultWithParens}");
-// bool logicResult = 5 > 3 && 2 < 4 || false;
-// bool logicResultParens = (5 > 3 && 2 < 4) || false;
-// Console.WriteLine($"5 > 3 && 2 < 4 || false = {logicResult}");
-// Console.WriteLine($"(5 > 3 && 2 < 4) || false = {logicResultParens}");
+Console.WriteLine();
+Console.WriteLine("Приоритет операций");
+int resultNoParens = 2 + 3 * 4;
+int resultWithParens = (2 + 3) * 4;
+Console.WriteLine($"2 + 3 * 4 = {resultNoParens}");
+Console.WriteLine($"(2 + 3) * 4 = {resultWithParens}");
+bool logicResult = 5 > 3 && 2 < 4 || false;
+bool logicResultParens = (5 > 3 && 2 < 4) || false;
+Console.WriteLine($"5 > 3 && 2 < 4 || false = {logicResult}");
+Console.WriteLine($"(5 > 3 && 2 < 4) || false = {logicResultParens}");
 
-// Console.WriteLine();
-// Console.WriteLine("Приёмная комиссия");
-// Console.Write("Введите средний балл аттестата: ");
-// double averageGrade = double.Parse(Console.ReadLine());
-// Console.Write("Введите баллы за экзамен (0-100): ");
-// int examScore = int.Parse(Console.ReadLine());
-// Console.Write("Есть льгота? (1 - да, 0 - нет): ");
-// int benefitInput = int.Parse(Console.ReadLine());
-// bool hasBenefit = (benefitInput == 1);
-// // TODO 1
-// bool hasGoodCertificate = averageGrade >= 4.0;
-// //TODO 2
-// bool hasGoodExam = examScore >=60;
-// //TODO 3
-// bool isEligibleByRules = (hasGoodCertificate && hasGoodExam) || hasBenefit;
-// // TODO 4: итоговый балл = средний балл * 10, а затем прибавьте баллы за экзамен.
-// // Используйте составной оператор += для второго шага.
-// double totalScore = averageGrade * 10;
-// totalScore += examScore;
-// Console.WriteLine();
-// Console.WriteLine("Результат");
-// Console.WriteLine($"Хороший аттестат (>= 4.0): {hasGoodCertificate}");
-// Console.WriteLine($"Хороший экзамен (>= 60): {hasGoodExam}");
-// Console.WriteLine($"Льгота: {hasBenefit}");
-// Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
-// Console.WriteLine($"Итоговый балл: {totalScore}");
+Console.WriteLine();
+Console.WriteLine("Приёмная комиссия");
+Console.Write("Введите средний балл аттестата: ");
+double averageGrade = double.Parse(Console.ReadLine());
+Console.Write("Введите баллы за экзамен (0-100): ");
+int examScore = int.Parse(Console.ReadLine());
+Console.Write("Есть льгота? (1 - да, 0 - нет): ");
+int benefitInput = int.Parse(Console.ReadLine());
+bool hasBenefit = (benefitInput == 1);
+// TODO 1
+bool hasGoodCertificate = averageGrade >= 4.0;
+//TODO 2
+bool hasGoodExam = examScore >=60;
+//TODO 3
+bool isEligibleByRules = (hasGoodCertificate && hasGoodExam) || hasBenefit;
+// TODO 4: итоговый балл = средний балл * 10, а затем прибавьте баллы за экзамен.
+// Используйте составной оператор += для второго шага.
+double totalScore = averageGrade * 10;
+totalScore += examScore;
+Console.WriteLine();
+Console.WriteLine("Результат");
+Console.WriteLine($"Хороший аттестат (>= 4.0): {hasGoodCertificate}");
+Console.WriteLine($"Хороший экзамен (>= 60): {hasGoodExam}");
+Console.WriteLine($"Льгота: {hasBenefit}");
+Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
+Console.WriteLine($"Итоговый балл: {totalScore}");
 
-// //Чётное или нечётное
-// Console.Write("Введите целое число ");
-// int num = int.Parse(Console.ReadLine());
-// bool isEven = num % 2 == 0;
-// Console.WriteLine(isEven);
+//Чётное или нечётное
+Console.Write("Введите целое число ");
+int num = int.Parse(Console.ReadLine());
+bool isEven = num % 2 == 0;
+Console.WriteLine(isEven);
 
 //Инкремент в выражении
 int num1 = 7;
@@ -125,16 +125,16 @@ int result02 = ++x2 * 3; //При ++x  уже увеличенное (3)
 Console.WriteLine($"x++ * 3: результат = {result01}, x = {x1}"); 
 Console.WriteLine($"++x * 3: результат = {result02}, x = {x2}"); 
 
-// //Калькулятор скидки с несколькими условиями
-// Console.Write("Введите сумму покупки ");
-// double summa = double.Parse(Console.ReadLine());
-// Console.Write("Есть карта постоянного клиента? 1 - да, 0 - нет ");
-// int card = int.Parse(Console.ReadLine());
-// bool havecard = (card == 1);
-// Console.Write("Введите количество товаров в чеке ");
-// int quantity = int.Parse(Console.ReadLine());
-// bool eligibleForDiscount = (summa >= 3000 && quantity >= 3) || havecard;
-// Console.WriteLine($"Сумма больше 3000: {summa}");
-// Console.WriteLine($"Количество товаров больше трёх: {quantity}");
-// Console.WriteLine($"Карта постоянного клиента: {card}");
-// Console.WriteLine($"Скидка: {eligibleForDiscount}");
+//Калькулятор скидки с несколькими условиями
+Console.Write("Введите сумму покупки ");
+double summa = double.Parse(Console.ReadLine());
+Console.Write("Есть карта постоянного клиента? 1 - да, 0 - нет ");
+int card = int.Parse(Console.ReadLine());
+bool havecard = (card == 1);
+Console.Write("Введите количество товаров в чеке ");
+int quantity = int.Parse(Console.ReadLine());
+bool eligibleForDiscount = (summa >= 3000 && quantity >= 3) || havecard;
+Console.WriteLine($"Сумма больше 3000: {summa}");
+Console.WriteLine($"Количество товаров больше трёх: {quantity}");
+Console.WriteLine($"Карта постоянного клиента: {card}");
+Console.WriteLine($"Скидка: {eligibleForDiscount}");
