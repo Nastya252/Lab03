@@ -103,3 +103,9 @@ Console.WriteLine($"Хороший экзамен (>= 60): {hasGoodExam}");
 Console.WriteLine($"Льгота: {hasBenefit}");
 Console.WriteLine($"Проходит по правилам: {isEligibleByRules}");
 Console.WriteLine($"Итоговый балл: {totalScore}");
+
+//Чётное или нечётное
+Console.Write("Введите целое число ");
+int num = int.Parse(Console.ReadLine());
+bool isEven = num % 2 == 0;
+Console.WriteLine(isEven);
